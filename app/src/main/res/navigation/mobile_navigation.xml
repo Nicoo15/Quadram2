@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_topfree">
+
+    <fragment
+        android:id="@+id/navigation_toppaid"
+        android:name="com.example.quadram.ui.toppaid.TopPaidFragment"
+        android:label="@string/title_toppaid"
+        tools:layout="@layout/fragment_toppaid" />
+
+    <fragment
+        android:id="@+id/navigation_topfree"
+        android:name="com.example.quadram.ui.topfree.TopfreeFragment"
+        android:label="@string/title_topfree"
+        tools:layout="@layout/fragment_topfree" />
+
+</navigation>

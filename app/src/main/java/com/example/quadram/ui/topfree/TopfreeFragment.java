@@ -62,6 +62,7 @@ public class TopfreeFragment extends Fragment {
 
 
 
+
         topfreeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

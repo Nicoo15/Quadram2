@@ -60,9 +60,6 @@ public class TopfreeFragment extends Fragment {
 
 
 
-
-
-
         topfreeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
@@ -73,14 +70,13 @@ public class TopfreeFragment extends Fragment {
     }
 
     private void parseJSON(){
-        String URL = "https://itunes.apple.com/es/rss/topfreeapplications/limit=10/json";
+        String URL = "itunes.apple.com/es/rss/topfreeapplications/limit=10/json";
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, URL, null,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
                     }
-
 
                 }, new Response.ErrorListener() {
             @Override
